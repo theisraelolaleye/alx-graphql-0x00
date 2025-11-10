@@ -1,11 +1,10 @@
-query {
-	character(id: 1) {
-		id
-		name
-		status
-		species
-		type
-		gender
+query CharactersPage1 {
+	characters(page: 1) {
+		results {
+			id
+			name
+			status
+			image
+		}
 	}
 }
-
